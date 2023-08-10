@@ -33,7 +33,7 @@ limitations under the License.
 <!-- eslint-disable id-length -->
 
 ```javascript
-import removeFirstGraphemeCluster from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-remove-first-grapheme-cluster@esm/index.mjs';
+import removeFirstGraphemeCluster from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-remove-first-grapheme-cluster@v0.0.1-esm/index.mjs';
 ```
 
 #### removeFirstGraphemeCluster( str, n )
@@ -74,7 +74,7 @@ out = removeFirstGraphemeCluster( 'foo bar', 10 );
 <body>
 <script type="module">
 
-import removeFirstGraphemeCluster from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-remove-first-grapheme-cluster@esm/index.mjs';
+import removeFirstGraphemeCluster from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-remove-first-grapheme-cluster@v0.0.1-esm/index.mjs';
 
 var str = removeFirstGraphemeCluster( 'presidential election', 1 );
 // returns 'residential election'
