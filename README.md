@@ -35,7 +35,23 @@ limitations under the License.
 
 > Remove the first `n` grapheme clusters (i.e., user-perceived characters) of a string.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/string-base-remove-first-grapheme-cluster
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
@@ -43,32 +59,8 @@ limitations under the License.
 
 <!-- eslint-disable id-length -->
 
-To use in Observable,
-
 ```javascript
-removeFirstGraphemeCluster = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-remove-first-grapheme-cluster@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var removeFirstGraphemeCluster = require( 'path/to/vendor/umd/string-base-remove-first-grapheme-cluster/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-base-remove-first-grapheme-cluster@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.removeFirstGraphemeCluster;
-})();
-</script>
+var removeFirstGraphemeCluster = require( '@stdlib/string-base-remove-first-grapheme-cluster' );
 ```
 
 #### removeFirstGraphemeCluster( str, n )
@@ -103,13 +95,8 @@ out = removeFirstGraphemeCluster( 'foo bar', 10 );
 
 <!-- eslint-disable id-length -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-base-remove-first-grapheme-cluster@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var removeFirstGraphemeCluster = require( '@stdlib/string-base-remove-first-grapheme-cluster' );
 
 var str = removeFirstGraphemeCluster( 'presidential election', 1 );
 // returns 'residential election'
@@ -125,11 +112,6 @@ str = removeFirstGraphemeCluster( '🐶🐮🐷🐰🐸', 2 );
 
 str = removeFirstGraphemeCluster( '🐶🐮🐷🐰🐸', 10 );
 // returns ''
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -170,7 +152,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
